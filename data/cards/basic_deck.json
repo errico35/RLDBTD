@@ -1,0 +1,11 @@
+[
+    {
+      "id": "arrow_tower",
+      "name": "Arrow Tower",
+      "cost": 1,
+      "effect": "place_arrow_tower",
+      "description": "Builds an Arrow Tower that fires at enemies."
+    },
+    …
+  ]
+  
