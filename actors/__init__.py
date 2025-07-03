@@ -8,7 +8,7 @@ from .player import Player
 from .enemy  import Enemy
 from .towers  import Tower
 from .base_actor import BaseActor
-from allied_units import AlliedUnit
+from .allied_units import AlliedUnit
 
 # If you have a common BaseActor class, include it too:
 # from .base_actor import BaseActor

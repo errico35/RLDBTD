@@ -169,7 +169,7 @@ class Game:
             # Create state objects
             menu_screen = MenuScreen(self.state_manager)
             world_map_screen = WorldMapScreen(self.state_manager)
-            level_screen = LevelScreen(self.state_manager)
+            level_screen = LevelScreen(self.state_manager, "example_level")
             
             # Add states to manager
             self.state_manager.add_state(GameState.MENU, menu_screen)
