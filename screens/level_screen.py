@@ -100,8 +100,9 @@ class LevelScreen:
 
     def load_level(self, level_id: str):
         """Load level data and initialize all subsystems."""
-        path = f"/data/maps/{level_id}.json"
-        self.tile_map = MapLoader.load_map(path)
+        project_root = Path(__file__).parent.parent  # one level up from screens/
+        map_file = project_root / "data" / "maps" / f"{level_id}.json"
+        self.tile_map = MapLoader.load_map(str(map_file))
 
         # Initialize core systems
         self.player = Player(start_pos=self.tile_map.spawn_points[0])
